@@ -1,0 +1,190 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ravshan Giyosov</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/open-iconic-bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'css/aos.css' %}">
+    <link rel="stylesheet" href="{% static 'css/ionicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/icomoon.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+    <script nonce="49030232-2e52-4fed-a456-ccead45be7a4">(function (w, d) {
+        !function (eK, eL, eM, eN) {
+            eK.zarazData = eK.zarazData || {};
+            eK.zarazData.executed = [];
+            eK.zaraz = {deferred: [], listeners: []};
+            eK.zaraz.q = [];
+            eK.zaraz._f = function (eO) {
+                return function () {
+                    let eP = Array.prototype.slice.call(arguments);
+                    eK.zaraz.q.push({m: eO, a: eP})
+                }
+            };
+            for (const eQ of ["track", "set", "debug"]) eK.zaraz[eQ] = eK.zaraz._f(eQ);
+            eK.zaraz.init = () => {
+                let eR = eL.getElementsByTagName(eN)[0], eS = eL.createElement(eN),
+                    eT = eL.getElementsByTagName("title")[0];
+                eT && (eK.zarazData.t = eL.getElementsByTagName("title")[0].text);
+                eK.zarazData.x = Math.random();
+                eK.zarazData.w = eK.screen.width;
+                eK.zarazData.h = eK.screen.height;
+                eK.zarazData.j = eK.innerHeight;
+                eK.zarazData.e = eK.innerWidth;
+                eK.zarazData.l = eK.location.href;
+                eK.zarazData.r = eL.referrer;
+                eK.zarazData.k = eK.screen.colorDepth;
+                eK.zarazData.n = eL.characterSet;
+                eK.zarazData.o = (new Date).getTimezoneOffset();
+                if (eK.dataLayer) for (const eX of Object.entries(Object.entries(dataLayer).reduce(((eY, eZ) => ({...eY[1], ...eZ[1]}))))) zaraz.set(eX[0], eX[1], {scope: "page"});
+                eK.zarazData.q = [];
+                for (; eK.zaraz.q.length;) {
+                    const e_ = eK.zaraz.q.shift();
+                    eK.zarazData.q.push(e_)
+                }
+                eS.defer = !0;
+                for (const fa of [localStorage, sessionStorage]) Object.keys(fa || {}).filter((fc => fc.startsWith("_zaraz_"))).forEach((fb => {
+                    try {
+                        eK.zarazData["z_" + fb.slice(7)] = JSON.parse(fa.getItem(fb))
+                    } catch {
+                        eK.zarazData["z_" + fb.slice(7)] = fa.getItem(fb)
+                    }
+                }));
+                eS.referrerPolicy = "origin";
+                eS.src = "https://preview.colorlib.com/cdn-cgi/zaraz/s.js?z=" + btoa(encodeURIComponent(JSON.stringify(eK.zarazData)));
+                eR.parentNode.insertBefore(eS, eR)
+            };
+            ["complete", "interactive"].includes(eL.readyState) ? zaraz.init() : eK.addEventListener("DOMContentLoaded", zaraz.init)
+        }(w, d, 0, "script");
+    })(window, document);</script>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="/">Ravshan</a>
+        <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+                data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav nav ml-auto">
+                <li class="nav-item"><a href="/#home-section" class="nav-link"><span>Home</span></a></li>
+                <li class="nav-item"><a href="/#about-section" class="nav-link"><span>About</span></a></li>
+                <li class="nav-item"><a href="/#resume-section" class="nav-link"><span>Resume</span></a></li>
+                <li class="nav-item"><a href="/#services-section" class="nav-link"><span>Services</span></a></li>
+                <li class="nav-item"><a href="/#skills-section" class="nav-link"><span>Skills</span></a></li>
+                <li class="nav-item"><a href="/#projects-section" class="nav-link"><span>Projects</span></a></li>
+                <li class="nav-item"><a href="/#blog-section" class="nav-link"><span>My Blog</span></a></li>
+                <li class="nav-item"><a href="/#contact-section" class="nav-link"><span>Contact</span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+{% block content %}
+
+{% endblock %}
+
+<footer class="ftco-footer ftco-section">
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">About</h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts.</p>
+                    <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                        <li class="ftco-animate"><a href="https://github.com/ravshandev1"><span><i class="fa-brands fa-github"></i></span></a></li>
+                        <li class="ftco-animate"><a href="https://t.me/ravshandev1"><span><i class="fa-brands fa-telegram"></i></span></a></li>
+                        <li class="ftco-animate"><a href="https://www.linkedin.com/in/ravshan-giyosov-4a9387245/"><span><i class="fa-brands fa-linkedin"></i></span></a></li>
+                        <li class="ftco-animate"><a href="https://www.instagram.com/ravshan.giyosov/"><span><i class="fa-brands fa-instagram"></i></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4 ml-md-4">
+                    <h2 class="ftco-heading-2">Links</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="/"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                        <li><a href="/#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                        <li><a href="/#services-section"><span class="icon-long-arrow-right mr-2"></span>Services</a></li>
+                        <li><a href="/#projects-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+                        <li><a href="/#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Services</h2>
+                    <ul class="list-unstyled">
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
+                        <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md">
+                <div class="ftco-footer-widget mb-4">
+                    <h2 class="ftco-heading-2">Have a Questions?</h2>
+                    <div class="block-23 mb-3">
+                        <ul>
+                            <li><span class="icon icon-map-marker"></span><span class="text">54 A, Mirzo Ulugbek, Tashkent, Uzbekistan</span>
+                            </li>
+                            <li><a href="tel://998908106763"><span class="icon icon-phone"></span><span
+                                    class="text">+998 90 810 67 63</span></a></li>
+                            <li><a href="#"><span class="icon icon-envelope"></span><span class="text"><span
+                                    class="__cf_email__" data-cfemail="d7beb9b1b897aeb8a2a5b3b8bab6beb9f9b4b8ba">ravshangiyosov2002@gmail.com</span></span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+        </div>
+    </div>
+</footer>
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.easing.1.3.js' %}"></script>
+<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+<script src="{% static 'js/jquery.stellar.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'js/aos.js' %}"></script>
+<script src="{% static 'js/jquery.animateNumber.min.js' %}"></script>
+<script src="{% static 'js/scrollax.min.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+</script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993"
+        integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA=="
+        data-cf-beacon='{"rayId":"786e8e1569c70cbf","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.3","si":100}'
+        crossorigin="anonymous"></script>
+</body>
+</html>
