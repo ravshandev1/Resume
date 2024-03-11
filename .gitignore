@@ -129,5 +129,4 @@ data.json
 
 # Pyre type checker
 .pyre/
-../.idea/
 .idea/
